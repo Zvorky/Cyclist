@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256.0px"
+   height="256.0px"
+   viewBox="0 0 256.0 256.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="cyclist_icon.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview261"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="2"
+     inkscape:cx="35"
+     inkscape:cy="143.5"
+     inkscape:window-width="1848"
+     inkscape:window-height="970"
+     inkscape:window-x="36"
+     inkscape:window-y="74"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid384" />
+  </sodipodi:namedview>
+  <defs
+     id="defs256" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect2912"
+       style="fill:#f5b21b;fill-opacity:1;stroke-width:5.16808"
+       inkscape:label="Frame"
+       d="M 15 15 L 15 171.02539 C 23.302637 163.21709 34.303426 158.2721 46.339844 157.92969 L 46.339844 150.09961 C 46.339844 75.842062 107.18191 15 181.43945 15 L 15 15 z " />
+    <path
+       id="circle2918"
+       style="fill:#283272;fill-opacity:1;stroke-width:6.85278"
+       inkscape:label="Front_Wheel"
+       d="M 181.43945,45.17188 A 105.09929,105.09929 0 0 0 76.339844,150.27148 105.09929,105.09929 0 0 0 127.02344,240 H 229.03125 235.85352 240 V 237.38281 231.03125 63.005864 A 105.09929,105.09929 0 0 0 181.43945,45.17188 Z" />
+    <circle
+       style="fill:#283272;fill-opacity:1;stroke-width:4.213"
+       id="circle2920"
+       cx="47.667694"
+       cy="207.97401"
+       r="22.927422"
+       inkscape:label="Back_Wheel" />
+  </g>
+</svg>
