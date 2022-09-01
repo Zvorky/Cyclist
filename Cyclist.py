@@ -11,11 +11,30 @@ from modules import CPI, Pages
 slash = '\\' if os.getenv('OS') else '/'
 selected = ''
 
+
+def CPI_Page():
+    global selected
+
+    Pages.clear()
+    Pages.Header()
+    
+    if(not selected):
+        print('\n\n\t\tType "select" to select a file before.\n\n')
+        return False
+
+    if(not CPI.checkFile(selected)):
+        selected = ''
+        print('\n\n\t\tIncompatible or Inexistent File.\n\n')
+        return False
+    
+    cpi = CPI(selected)
+    print()
+
 pages = {   'about':    Pages.About,
             'help':     Pages.Help,
             'commands': Pages.Commands,
             'select':   Pages.Select,
-            'cpi':      None
+            'cpi':      CPI_Page
         }
 
 if __name__ == "__main__":
@@ -44,7 +63,7 @@ if __name__ == "__main__":
         finally:
             prev.append(page)
             if(page == 'select'):
-                selection = Pages.CycleInput()
+                selection = CPI.pathInput(Pages.ClockWave() + '   ')
                 if(CPI.checkFile(selection)):
                     Pages.selected = selected = selection
                     Pages.Selected()
