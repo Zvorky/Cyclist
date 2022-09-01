@@ -16,6 +16,8 @@ def checkFile(path: str):
         return True
     except FileNotFoundError:
         return False
+    except IsADirectoryError:
+        return False
 
 class CPI:
     def __init__(self, filepath = ''):

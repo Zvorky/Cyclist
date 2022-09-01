@@ -1,3 +1,8 @@
+import os, time
+
+CWOffset = 0
+selected = ''
+
 splash = ['',
 '                          ==================+++-----         ',
 '                          ==============++                   ',
@@ -32,7 +37,8 @@ header = '''=====-                                                   |
 _________________________________________________________|
                                                         /'''
 
-clockwave = ['     ____ ','____|    |']
+clockwave = ['     ____ ',
+             '____|    |']
 
 
 #  --------------------   ===| Pages |===   --------------------
@@ -100,3 +106,66 @@ help = '''
                   More information at:
             https://github.com/Zvorky/Cyclist
 '''
+
+
+
+
+def clear():
+    if(os.getenv('OS')):
+        os.system('cls')
+    else:
+        os.system('clear')
+
+
+def ClockWave(offset = 0, repeat = 1):
+    offset = offset % len(clockwave[1])
+
+    return (clockwave[0][offset:len(clockwave[0])] + clockwave[0][0:offset] ) * repeat + '\n' + (clockwave[1][offset:len(clockwave[1])] + clockwave[1][0:offset]) * repeat
+
+
+def CycleInput():
+    global CWOffset
+    CWOffset -= 1
+    return input(ClockWave(CWOffset) + '   ')
+
+
+def Splash():
+    clear()
+    for line in splash:
+        print(line)
+        time.sleep(0.05)
+    time.sleep(3)
+
+
+def Header():
+    global selected
+    clear()
+    print(header)
+    if(selected):
+        print(ClockWave(CWOffset, 2) + '    ' + selected)
+    else:
+        print(ClockWave(CWOffset, 2) + '    any file selected')
+
+def About():
+    clear()
+    print(about)
+
+def Help():
+    clear()
+    Header()
+    print(help)
+
+def Commands():
+    clear()
+    Header()
+    print(commandlist)
+
+def Select():
+    clear()
+    Header()
+    print('\n\n\t\tInsert file path to select\n\n')
+
+def Selected():
+    clear()
+    Header()
+    print('\n\n\t\tFile Selected.\n\n')
