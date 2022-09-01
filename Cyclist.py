@@ -6,8 +6,7 @@
 
 
 import os, time
-import Cyclist_ASCII
-import CPI
+from modules import Cyclist_ASCII, CPI
 
 slash = '\\' if os.getenv('OS') else '/'
 CWOffset = 0
