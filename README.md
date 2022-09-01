@@ -33,5 +33,5 @@ Insira "cpi" e receba seu relatório.
 
 ### Selecting File
 Insert "select" to access the file selection page, insert the path to your machine language file.
-### Calcutating CPI
+### Calculating CPI
 Insert "cpi" and get your report.
