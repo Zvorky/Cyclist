@@ -23,10 +23,15 @@
 ### Selecionando Arquivo  
 Insira "select" para acessar a página de seleção de arquivo, insira o caminho para seu arquivo em linguagem de máquina.  
 ### Calculando CPI
-Insira "cpi" e receba seu relatório.
-
+Insira "cpi" e receba seu relatório.  
+  
 ## English
 - You can run the complete CLI by launching [Cyclist.py](https://github.com/Zvorky/Cyclist/blob/main/Cyclist.py)
 <p align="left">or</p>
 
 - Run the [CPI.py](https://github.com/Zvorky/Cyclist/blob/main/modules/CPI.py) module only.
+
+### Selecting File
+Insert "select" to access the file selection page, insert the path to your machine language file.
+### Calcutating CPI
+Insert "cpi" and get your report.
