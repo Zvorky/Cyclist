@@ -45,7 +45,7 @@ if __name__ == "__main__":
     while(page != 'exit'):
         Pages.selected = selected
 
-        if(page == 'prev'):
+        if(page == 'back'):
             if(len(prev) > 1):
                 prev.pop()
             page = prev.pop()

@@ -87,7 +87,7 @@ commandlist = '''
 
              select     - Select file
              cpi        - Calculates CPI for selected file
-             prev       - Return to previous page
+             back       - Return to previous page
              commands   - Command List (this page)
              about      - Shows About page
              help       - Shows Help page
