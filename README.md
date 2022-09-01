@@ -9,3 +9,24 @@
 - CLI (Command Line Interface) performance measurement tool for machine language programs for [RISC-V](https://github.com/riscv) architecture.
 - [This tool](https://github.com/Zvorky/Cyclist/blob/main/modules/CPI.py) calculates the total number of cycles and average [Cycles Per Instruction (CPI)](https://en.wikipedia.org/wiki/Cycles_per_instruction) of a program and helps with related calculations.
 - By now, this supports [RV32I](https://five-embeddev.com/riscv-isa-manual/latest/rv32.html) only.
+
+---
+# <p align="center">Usage</p>
+<p align="center"><img src=https://github.com/Zvorky/Cyclist/blob/main/artwork/Cyclist_Splash.png></p>
+
+## Português
+- Você pode executar a CLI completa rodando o [Cyclist.py](https://github.com/Zvorky/Cyclist/blob/main/Cyclist.py)
+<p align="left">ou</p>
+
+- Rodar apenas o módulo [CPI.py](https://github.com/Zvorky/Cyclist/blob/main/modules/CPI.py)  
+  
+### Selecionando Arquivo  
+Insira "select" para acessar a página de seleção de arquivo, insira o caminho para seu arquivo em linguagem de máquina.  
+### Calculando CPI
+Insira "cpi" e receba seu relatório.
+
+## English
+- You can run the complete CLI by launching [Cyclist.py](https://github.com/Zvorky/Cyclist/blob/main/Cyclist.py)
+<p align="left">or</p>
+
+- Run the [CPI.py](https://github.com/Zvorky/Cyclist/blob/main/modules/CPI.py) module only.
