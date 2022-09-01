@@ -27,8 +27,21 @@ def CPI_Page():
         print('\n\n\t\tIncompatible or Inexistent File.\n\n')
         return False
     
-    cpi = CPI(selected)
-    print()
+    cpi = CPI.CPI(selected)
+    print('\n\n\t\tCPI = {}\n\n\t\tTotal\n\t\tInstructions: \t{}\n\t\tCycles: \t{}\n'.format(cpi.cpi, cpi.instructions, cpi.cycles))
+    Pages.time.sleep(1)
+    print('\t\tInstructions with:')
+    for i in cpi.CyclesLog():
+        print('\t\t' + i)
+    Pages.time.sleep(1)
+    print('\n')
+    log = cpi.log
+    while(log):
+        print(log[:log.find('\n')])
+        log = log[log.find('\n')+1:]
+        Pages.time.sleep(0.05)
+    print('\n\n')
+
 
 pages = {   'about':    Pages.About,
             'help':     Pages.Help,
@@ -37,11 +50,12 @@ pages = {   'about':    Pages.About,
             'cpi':      CPI_Page
         }
 
+
 if __name__ == "__main__":
     page = 'about'
     prev = []
 
-    Pages.Splash()
+    # Pages.Splash()
     while(page != 'exit'):
         Pages.selected = selected
 
