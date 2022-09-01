@@ -1,5 +1,6 @@
 # Dumped Assembly Programs
 TestFiles/
+TestFiles_asm/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
