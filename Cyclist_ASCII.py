@@ -32,6 +32,8 @@ header = '''=====-                                                   |
 _________________________________________________________|
                                                         /'''
 
+clockwave = ['     ____ ','____|    |']
+
 
 #  --------------------   ===| Pages |===   --------------------
 
@@ -76,15 +78,15 @@ about = '''
 commandlist = '''
 
                   --| Command List |--
-         ____
-        |    cd         - Change Directory
-        |    ls	        - List Directory Contents
-        |    select     - Select file
-        |    cpi        - Calculates CPI for selected file
-        |    commands   - Command List (this page)
-        |    |
-___     |    |
-   |____|    '''
+
+             select     - Select file
+             cpi        - Calculates CPI for selected file
+             prev       - Return to previous page
+             commands   - Command List (this page)
+             about      - Shows About page
+             help       - Shows Help page
+             exit       - Finalize Cyclist
+'''
 
 help = '''
 
@@ -93,6 +95,8 @@ help = '''
           Type "commands" to see Command List.
           
           Below Cyclist logotype, at the header,
-        you can see the path to the directory or
-        file (directories ends with "{}").
+        you can see  the path to  selected file.
+
+                  More information at:
+            https://github.com/Zvorky/Cyclist
 '''

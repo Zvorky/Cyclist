@@ -10,17 +10,15 @@
 import os
 
 
-def clear():
-    if(os.getenv('OS')):
-        os.system('cls')
-    else:
-        os.system('clear')
-
-
+def checkFile(path: str):
+    try:
+        open(path, 'rb')
+        return True
+    except FileNotFoundError:
+        return False
 
 class CPI:
     def __init__(self, filepath = ''):
-        clear()
         if(filepath):
             self.filepath = filepath
         else:
@@ -33,6 +31,3 @@ class CPI:
         except FileNotFoundError:
             input('Arquivo não encontrado!\n')
             self.__init__()
-
-
-cpi = CPI()
