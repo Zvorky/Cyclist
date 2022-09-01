@@ -55,7 +55,7 @@ if __name__ == "__main__":
     page = 'about'
     prev = []
 
-    # Pages.Splash()
+    Pages.Splash()
     while(page != 'exit'):
         Pages.selected = selected
 
