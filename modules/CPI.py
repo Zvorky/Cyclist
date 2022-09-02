@@ -24,8 +24,12 @@ opcode = {  '0000011': 5,
 
 def pathInput(msg = ''):
     path = input(msg)
-    if((path[0] == "'" and path[len(path)-1] == "'") or (path[0] == '"' and path[len(path)-1] == '"')):
-        path = path[1:len(path)-1]
+
+    if(len(path) > 1):
+        # Remove '' and ""
+        if((path[0] == "'" and path[len(path)-1] == "'") or (path[0] == '"' and path[len(path)-1] == '"')):
+            path = path[1:len(path)-1]
+
     return path
 
 def checkFile(path: str):
@@ -103,8 +107,7 @@ class CPI:
 if __name__ == "__main__":
     filepath = pathInput('Input File to calculate: ')
     while(not checkFile(filepath)):
-        print(filepath)
-        filepath = pathInput('Incompatible or Inexistent File...\n\n: ')
+        filepath = pathInput('\nIncompatible or Inexistent File...\n{}\n\n: '.format(filepath))
 
     cpi = CPI(filepath)
     print('\n{} Instructions\n{} Cycles\nCPI = {}'.format(cpi.instructions, cpi.cycles, cpi.cpi))
