@@ -30,6 +30,14 @@ def pathInput(msg = ''):
         if((path[0] == "'" and path[len(path)-1] == "'") or (path[0] == '"' and path[len(path)-1] == '"')):
             path = path[1:len(path)-1]
 
+        # Remove initial blank spaces
+        while(path[0] == ' ' and len(path) > 1):
+            path = path[1:]
+
+        # Remove final blank spaces
+        while(path[len(path)-1] == ' ' and len(path) > 1):
+            path = path[:len(path)-1]
+    
     return path
 
 def checkFile(path: str):
