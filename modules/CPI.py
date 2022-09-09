@@ -26,10 +26,6 @@ def pathInput(msg = ''):
     path = input(msg)
 
     if(len(path) > 1):
-        # Remove '' and ""
-        if((path[0] == "'" and path[len(path)-1] == "'") or (path[0] == '"' and path[len(path)-1] == '"')):
-            path = path[1:len(path)-1]
-
         # Remove initial blank spaces
         while(path[0] == ' ' and len(path) > 1):
             path = path[1:]
@@ -37,6 +33,10 @@ def pathInput(msg = ''):
         # Remove final blank spaces
         while(path[len(path)-1] == ' ' and len(path) > 1):
             path = path[:len(path)-1]
+
+        # Remove '' and ""
+        if((path[0] == "'" and path[len(path)-1] == "'") or (path[0] == '"' and path[len(path)-1] == '"')):
+            path = path[1:len(path)-1]
     
     return path
 
